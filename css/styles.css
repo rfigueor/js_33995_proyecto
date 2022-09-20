@@ -1,0 +1,687 @@
+@import "https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i|Poppins:300,400,500,600,700i,900|Montserrat:300,400,500,600,700&display=swap";
+@import "https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i|Poppins:300,400,500,600,700i,900|Montserrat:300,400,500,600,700&display=swap";
+@font-face {
+  font-family: "PPWoodland";
+  src: url("../assets/font/PPWoodland-Bold.otf") format("woff2");
+}
+/*** BOTONES ***/
+/*** TITULOS ***/
+/*** TITULOS SECCIONES ***/
+/*** TARJETA CONTRATACION ***/
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline: none;
+  font-size: 100%;
+}
+
+body {
+  font-size: 14px;
+  color: #353535;
+  line-height: 28px;
+  font-weight: 400;
+  background-color: #f8f9fa;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #ab7442;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.btn-theme {
+  background-color: #ab7442 !important;
+  color: #ffffff !important;
+  border-color: #ab7442 !important;
+  transition: all 0.5s ease;
+}
+.btn-theme:hover {
+  background-color: #ffffff !important;
+  color: #ab7442 !important;
+  border-color: #ab7442 !important;
+  transition: all 0.5s ease;
+}
+
+.img-corners {
+  border-radius: 25px;
+}
+
+.global-text {
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  display: block;
+  font-size: 18px;
+  line-height: 1.4em;
+  color: #353535;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.page-title {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 50px 0px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.page-title:before {
+  position: absolute;
+  content: "";
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.page-title h2 {
+  position: relative;
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 1.2em;
+  z-index: 99;
+  color: #ffffff;
+  font-family: "PT Serif", serif;
+  margin-bottom: 10px;
+}
+.page-title .title {
+  position: relative;
+  display: inline-block;
+  font-size: 22px;
+  line-height: 1em;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 30px;
+  opacity: 0;
+  transition: all 500ms ease;
+  opacity: 1;
+  transform: translateY(0);
+}
+.page-title .title:before {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  height: 3px;
+  width: 30%;
+  background-color: #ab7442;
+  content: "";
+  margin-left: 30px;
+  left: auto;
+  right: 100%;
+  margin-right: 30px;
+  margin-left: 0;
+}
+.page-title .title:after {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  height: 3px;
+  width: 30%;
+  background-color: #ab7442;
+  content: "";
+  margin-left: 30px;
+}
+
+.section {
+  margin: 50px 0px;
+}
+
+.section-title {
+  position: relative;
+  margin-bottom: 60px;
+}
+.section-title h2 {
+  position: relative;
+  display: inline-block;
+  font-size: 50px;
+  color: #353535;
+  line-height: 1em;
+  font-weight: 600;
+  color: transparent;
+  cursor: default;
+  -webkit-text-stroke: 1px #353535;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.section-title h2:hover {
+  color: #353535;
+  -webkit-text-stroke: 1px transparent;
+}
+.section-title .text {
+  position: relative;
+  display: block;
+  font-size: 18px;
+  line-height: 1.4em;
+  color: #353535;
+  font-weight: 400;
+  margin-top: 20px;
+}
+.section-title p {
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  display: block;
+  font-size: 18px;
+  line-height: 1.4em;
+  color: #353535;
+  font-weight: 400;
+  margin-top: 20px;
+}
+.section-title .light h2 {
+  -webkit-text-stroke: 1px #ffffff;
+}
+.section-title .light h2:hover {
+  color: #ffffff;
+  -webkit-text-stroke: 1px transparent;
+}
+.section-title .light h2:before {
+  background-color: #ffffff;
+}
+.section-title .light h2:after {
+  background-color: #ffffff;
+}
+.section-title .light .text {
+  color: #ffffff;
+}
+
+.nosotros {
+  margin: 50px 0px;
+}
+
+.equipo {
+  margin: 50px 0px;
+}
+
+.contratacion h2 {
+  position: relative;
+  margin-bottom: 35px;
+}
+.contratacion h2::after {
+  content: "";
+  width: 120px;
+  height: 3px;
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: -20px;
+  margin: 0 auto;
+}
+.contratacion .box {
+  padding: 40px 30px 40px 30px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+  position: relative;
+  background-color: #333;
+  height: 300px;
+  max-height: 300px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+.contratacion .box:hover {
+  padding: 30px 30px 70px 30px;
+  box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.contratacion .box:hover img {
+  opacity: 1;
+}
+.contratacion .box:hover span {
+  color: #fff;
+}
+.contratacion .box:hover h4 a {
+  color: #fff;
+}
+.contratacion .box:hover p {
+  color: #fff;
+}
+.contratacion .box img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0;
+  transition: all ease 1s;
+}
+.contratacion .box span {
+  display: block;
+  font-size: 56px;
+  font-weight: 700;
+  color: #0f0d0d;
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  line-height: normal;
+}
+.contratacion .box h4 {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0;
+  margin: 20px 0;
+  color: #ffffff;
+  text-decoration: none;
+}
+.contratacion .box p {
+  color: #ffffff;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Declare heights because of positioning of img element */
+/* Since positioning the image, we need to help out the caption */
+.carousel {
+  margin-bottom: 4rem;
+}
+
+.carousel-inner {
+  background-image: url("../assets/img/title_bg.jpg");
+}
+
+.carousel-item {
+  height: 28rem;
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+.carousel-caption h2 {
+  font-family: "PT Serif", serif;
+  font-size: 80px;
+  line-height: 1.1em;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+.carousel-caption p {
+  font-size: 25px;
+}
+.carousel-caption .title {
+  position: relative;
+  display: inline-block;
+  font-size: 22px;
+  line-height: 1em;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 30px;
+  opacity: 0;
+  transition: all 500ms ease;
+  opacity: 1;
+  transform: translateY(0);
+}
+.carousel-caption .title:before {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  height: 3px;
+  width: 30%;
+  background-color: #ab7442;
+  content: "";
+  margin-left: 30px;
+  left: auto;
+  right: 100%;
+  margin-right: 30px;
+  margin-left: 0;
+}
+.carousel-caption .title:after {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  height: 3px;
+  width: 30%;
+  background-color: #ab7442;
+  content: "";
+  margin-left: 30px;
+}
+
+.footer-content {
+  color: #ffffff;
+}
+.footer-content .resume {
+  padding-bottom: 25px;
+}
+.footer-content .footer-title a {
+  font-size: 25px !important;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "PPWoodland";
+  font-size: xx-large;
+}
+.footer-content .categories ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.footer-content .categories ul li a:hover {
+  text-decoration: underline;
+  color: #ab7442;
+}
+
+.footer-contact ul li a {
+  text-decoration: none !important;
+  color: #ffffff;
+}
+.footer-contact ul li a:hover {
+  text-decoration: none;
+  color: #ab7442;
+}
+
+/* SUBMENU */
+.header-bg {
+  background-color: #353535;
+}
+
+.nav-title {
+  font-size: 30px !important;
+  color: #353535;
+  text-decoration: none;
+  font-family: "PPWoodland";
+  font-size: xx-large;
+}
+
+.navbar-menu {
+  position: relative;
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+.navbar-menu li {
+  position: relative;
+  float: left;
+  padding: 35px 0px;
+  margin-right: 35px;
+  transition: all 300ms ease;
+}
+.navbar-menu li a {
+  text-decoration: none;
+  position: relative;
+  display: block;
+  text-align: center;
+  opacity: 1;
+  font-weight: 500;
+  color: #353535;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 0;
+  transition: all 300ms ease;
+}
+.navbar-menu li a:before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  content: "";
+  background-color: #ab7442;
+  -webkit-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transform-origin: top right;
+  -ms-transform-origin: top right;
+  transform-origin: top right;
+  transition: transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
+  transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+}
+.navbar-menu li:hover a {
+  color: #ab7442;
+}
+.navbar-menu li:hover a:before {
+  transform: scale(1, 1);
+  transform-origin: bottom left;
+}
+.navbar-menu li.current a {
+  color: #ab7442;
+}
+.navbar-menu li.current a:before {
+  transform: scale(1, 1);
+  transform-origin: bottom left;
+}
+
+.navigation li ul {
+  position: absolute;
+  left: 0px;
+  top: 100%;
+  width: 250px;
+  padding: 20px 15px;
+  z-index: 100;
+  background: #ffffff;
+  opacity: 1;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: all 300ms ease;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.05), -2px 0px 5px 1px rgba(0, 0, 0, 0.05);
+}
+.navigation li ul li {
+  position: relative;
+  width: 100%;
+}
+.navigation li ul li:last-child {
+  border-bottom: none;
+}
+.navigation li ul li a {
+  position: relative;
+  display: block;
+  padding: 5px 10px;
+  line-height: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #353535;
+  text-align: left;
+  white-space: nowrap;
+  text-transform: capitalize;
+  transition: all 200ms ease;
+}
+.navigation li ul li:hover a {
+  color: #ffffff;
+  background-color: #ab7442;
+}
+.navigation li ul li ul {
+  position: absolute;
+  left: 100%;
+  top: 0%;
+  width: 250px;
+  padding: 20px 15px;
+  z-index: 100;
+  opacity: 1;
+  background: #ffffff;
+  margin-left: 15px;
+  margin-top: -20px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 300ms ease;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.05), -2px 0px 5px 1px rgba(0, 0, 0, 0.05);
+}
+.navigation li ul li ul li {
+  position: relative;
+  width: 100%;
+}
+.navigation li ul li ul li:last-child {
+  border-bottom: none;
+}
+.navigation li ul li ul li a {
+  position: relative;
+  display: block;
+  padding: 5px 10px;
+  line-height: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #353535;
+  text-align: left;
+  white-space: nowrap;
+  text-transform: capitalize;
+  transition: all 200ms ease;
+}
+.navigation li ul li ul li a:hover {
+  color: #ffffff;
+  background-color: #ab7442;
+}
+.navigation li ul li.dropdown a:after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f105";
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: block;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 900;
+  z-index: 5;
+}
+.navigation li ul li.dropdown:hover ul {
+  transform: scaleX(1);
+  visibility: visible;
+  opacity: 1;
+  transition: all 500ms ease;
+}
+.navigation li ul.from-right {
+  left: auto;
+  right: 0px;
+}
+.navigation li.dropdown:hover ul {
+  transform: scaleY(1);
+  visibility: visible;
+  opacity: 1;
+  top: 100%;
+}
+
+.header-contact .img-message {
+  content: url("../assets/icon/global/message_16.png");
+}
+.header-contact .img-phone {
+  content: url("../assets/icon/global/phone-16.png");
+}
+
+.header-social .img-facebook {
+  content: url("../assets/icon/social/facebook-16.png");
+}
+.header-social .img-facebook:hover {
+  content: url("../assets/icon/social/facebook-16-b.png");
+}
+.header-social .img-linkedin {
+  content: url("../assets/icon/social/linkedin-16.png");
+}
+.header-social .img-linkedin:hover {
+  content: url("../assets/icon/social/linkedin-16-b.png");
+}
+.header-social .img-instagram {
+  content: url("../assets/icon/social/instagram-16.png");
+}
+.header-social .img-instagram:hover {
+  content: url("../assets/icon/social/instagram-16-b.png");
+}
+.header-social .img-twitter {
+  content: url("../assets/icon/social/twitter-16.png");
+}
+.header-social .img-twitter:hover {
+  content: url("../assets/icon/social/twitter-16-b.png");
+}
+
+.footer-contact .img-message {
+  content: url("../assets/icon/global/message-16-b.png");
+  padding-right: 2px;
+}
+.footer-contact .img-phone {
+  content: url("../assets/icon/global/phone-16-b.png");
+  padding-right: 2px;
+}
+.footer-contact .img-map {
+  content: url("../assets/icon/global/map-marker-16-b.png");
+  padding-right: 2px;
+}
+
+.footer-social .img-facebook {
+  content: url("../assets/icon/social/facebook-24.png");
+}
+.footer-social .img-facebook:hover {
+  content: url("../assets/icon/social/facebook-24-b.png");
+}
+.footer-social .img-linkedin {
+  content: url("../assets/icon/social/linkedin-24.png");
+}
+.footer-social .img-linkedin:hover {
+  content: url("../assets/icon/social/linkedin-24-b.png");
+}
+.footer-social .img-instagram {
+  content: url("../assets/icon/social/instagram-24.png");
+}
+.footer-social .img-instagram:hover {
+  content: url("../assets/icon/social/instagram-24-b.png");
+}
+.footer-social .img-twitter {
+  content: url("../assets/icon/social/twitter-24.png");
+}
+.footer-social .img-twitter:hover {
+  content: url("../assets/icon/social/twitter-24-b.png");
+}
+
+.footer-content .img-arrow {
+  content: url("../assets/icon/global/arrow-16-b.png");
+}
+
+/* @media only screen and (min-width: 768px){
+	.main-menu .navigation > li > ul,
+	.main-menu .navigation > li > ul > li > ul{
+		display:block !important;
+		visibility:hidden;
+		opacity:0;
+	}
+} */
+/* Del menu */
+@media only screen and (max-width: 1366px) {
+  .carousel-caption h1 {
+    font-size: 70px;
+  }
+  .carousel-caption p {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 1139px) {
+  .carousel-caption h1 {
+    font-size: 60px;
+  }
+  .carousel-caption p {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .carousel-caption h1 {
+    font-size: 50px;
+  }
+  .carousel-caption p {
+    visibility: hidden;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .carousel-caption h1 {
+    font-size: 40px;
+  }
+  .carousel-caption p {
+    font-size: 5px;
+  }
+}
+@media only screen and (max-width: 482px) {
+  .carousel-caption h1 {
+    font-size: 40px;
+  }
+  .carousel-caption p {
+    font-size: 15px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

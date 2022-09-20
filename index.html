@@ -1,75 +1,384 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Las Buena Madera</title>
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+
+    <meta name="description" content="Diseño, construcción y servicios de proyectos sobre madera" />
+    <meta name="keywords" content="madera, servicio, construccion, terrazas, quinchos, madera, pino, nogal, cortavistas, arquitectura" />
+
     <!-- CSS only -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
     <!-- JavaScript Bundle with Popper -->
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <div class="content">
-      <div class="card">
-        <div class="card-body">
-          <h3 class="card-title">Cotizador de Servicios</h3>
+    <header>
+      <div class="px-3 py-2 header-bg text-white">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <div
+              class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none header-contact"
+            >
+              <a href="tel:5687654321" class="nav-link px-2 text-white"> <i class="img_phone"></i>+56-8765-4321</a>
+              <a href="mailto:contacto@buenamadera.com" class="nav-link px-2 text-white"
+                ><i class="img_message"></i> contacto@buenamadera.com</a
+              >
+            </div>
 
-          <div class="col-md-6">
-            <select class="form-select" id="listServicio" aria-label="Default select example"></select>
-            <div class="alert alert-danger" id="alertServicio" role="alert">Seleccione Opcion Valida!!</div>
+            <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small header-social">
+              <li>
+                <a href="https://www.facebook.com/" target="_blank" class="nav-link text-secondary img-facebook"></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/" target="_blank" class="nav-link text-secondary img-linkedin"></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/" target="_blank" class="nav-link text-secondary img-instagram"></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/" target="_blank" class="nav-link text-secondary img-twitter"></a>
+              </li>
+            </ul>
           </div>
-
-          <div class="col-md-6" id="divPintura">
-            <div class="col-md-6">
-              <select class="form-select" id="listPintura" aria-label="Default select example"></select>
-              <div class="alert alert-danger" id="alertPintura" role="alert">Seleccione Opcion Valida!!</div>
-            </div>
-            <div class="col-md-6" id="divCasa">
-              <div class="mb-3">
-                <label for="txtMtCasa" class="form-label">¿Cantidad de metros cuadrados?</label>
-                <input class="form-control" id="txtMtCasa" type="number" />
-              </div>
-            </div>
-            <div class="col-md-6" id="divEdificio">
-              <div class="mb-3">
-                <label for="txtPisos" class="form-label">¿Cantidad de pisos ?</label>
-                <input class="form-control" id="txtPisos" type="number" />
-              </div>
-              <div class="mb-3">
-                <label for="txtMtEdificio" class="form-label">¿Cantidad de metros cuadrados?</label>
-                <input class="form-control" id="txtMtEdificio" type="number" />
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6" id="divRadier">
-            <div class="mb-3">
-              <label for="txtMtRadier" class="form-label">¿Cantidad de metros cuadrados?</label>
-              <input class="form-control" id="txtMtRadier" type="number" />
-            </div>
-            <div class="mb-3">
-              <label for="txtCmRadier" class="form-label">¿Altura en cm del radier? (cm)</label>
-              <input class="form-control" id="txtCmRadier" type="number" />
-            </div>
-          </div>
-
-          <button type="button" id="btnCalcular" class="btn btn-primary">Calcular</button>
-          <div class="alert alert-success" id="alertValor" role="alert"></div>
-
-          <script src="./index.js"></script>
         </div>
       </div>
-    </div>
+    </header>
+
+    <nav class="navbar navbar-expand-md navbar-white bg-white">
+      <div class="container">
+        <h1>
+          <a class="navbar-brand nav-title" href="index.html"
+            ><img alt="Logo la buena madera" src="assets/img/header_logo.png" />La Buena Madera</a
+          >
+        </h1>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navbar-menu" id="navbarCollapse">
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="pages/nosotros.html">Sobre Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="pages/soluciones.html">Soluciones</a></li>
+            <li class="nav-item"><a class="nav-link" href="pages/servicios.html">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="pages/proyectos.html">Projectos</a></li>
+            <li class="nav-item"><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" style="background-image: url(assets/img/carousel_bg.jpg)">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="carousel-caption">
+                <span class="title">La Buena Madera</span>
+                <h2>
+                  Soluciones de carpinteria <br />
+                  profesional.
+                </h2>
+                <p>Desarrollo de soluciones de inicio a fin, desde la etapa de diseño hasta la construcción final.</p>
+
+                <p>
+                  <a class="btn btn-lg btn-primary btn-theme" href="pages/soluciones.html"
+                    ><span class="btn-title">Soluciones</span></a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="carousel-caption">
+                <span class="title">La Buena Madera</span>
+                <h2>
+                  Tecnologia y materiales <br />
+                  de primera calidad
+                </h2>
+                <p>Materias primas de gran variedad y de alta calidad.</p>
+
+                <p>
+                  <a class="btn btn-lg btn-primary btn-theme" href="pages/servicios.html"
+                    ><span class="btn-title">Servicios</span></a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="carousel-caption">
+                <span class="title">La Buena Madera</span>
+                <h2>Soluciones a las necesidades de nuestros clientes.</h2>
+                <p>
+                  Contamos con un equipo altamente calificado para brindar un servicio de calidad a lo largo de nuestros proyectos.
+                </p>
+
+                <p>
+                  <a class="btn btn-lg btn-primary btn-theme" href="pages/proyectos.html"
+                    ><span class="btn-title">Proyectos</span></a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </main>
+
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="author-img">
+              <img src="../assets/img/nosotros.jpg" class="img-fluid img-corners" alt="Nosotros" />
+            </div>
+          </div>
+          <div class="col-lg-7 d-flex flex-column justify-content-center">
+            <div class="section-title mt-4">
+              <h2>Nuestra Empresa</h2>
+              <p>
+                Somos una empresa que dio sus primeros pasos en el año 2012, esperanzados en un proyecto de vida, la
+                cual fue tomando forma a través del tiempo, partiendo con uno a dos trabajadores, hoy en día ya
+                ascienden a más de 25 empleados activos y permanentes en la empresa, hemos transformado nuestro oficio
+                en una profesión. Somos un equipo especializado en el área de carpintería, nuestro personal consta con
+                años de experiencia y con la sabiduría necesaria para llevar a cabo cada proyecto idealizado por
+                nuestros clientes, a lo largo del país
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div id="terrazas" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner bg-white">
+                <div class="carousel-item active">
+                  <img class="img-fluid img-corners" src="../assets/img/servicios/terrazas/terraza_01.jpg" alt="Imagen Terraza Número 1" />
+                </div>
+                <div class="carousel-item">
+                  <img class="img-fluid img-corners" src="../assets/img/servicios/terrazas/terraza_02.jpg" alt="Imagen Terraza Número 2" />
+                </div>
+                <div class="carousel-item">
+                  <img class="img-fluid img-corners" src="../assets/img/servicios/terrazas/terraza_03.jpg" alt="Imagen Terraza Número 3" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex flex-column justify-content-center">
+            <div class="section-title mt-4">
+              <h2>Terrazas & Cobertizos</h2>
+
+              <p>
+                Nuestras terrazas de madera principalmente Pino Oregón Nacional, son hechas a la medida según cada
+                proyecto, en donde valoramos por sobre todo la calidad, durabilidad y la prolijidad en su construcción.
+                Nuestro capacitado equipo, velará por un trabajo limpio y a la perfección en el menor tiempo posible,
+                además de un servicio integral y en atención personalizada en la pre y post venta.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div id="quinchos" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner bg-white">
+                <div class="carousel-item active">
+                  <img src="../assets/img/servicios/quinchos/quinchos_01.jpg" alt="Imagen Quincho Número 1" />
+                </div>
+                <div class="carousel-item">
+                  <img src="../assets/img/servicios/quinchos/quinchos_02.jpg" alt="Imagen Quincho Número 2" />
+                </div>
+                <div class="carousel-item">
+                  <img src="../assets/img/servicios/quinchos/quinchos_03.jpg" alt="Imagen Quincho Número 3" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex flex-column justify-content-center">
+            <div class="section-title mt-4">
+              <h2>Quinchos</h2>
+
+              <p>
+                Nuestros Quinchos son construidos de hormigón liviano, que permite un armado rápido y limpio, su
+                terminación de cemento suave permite que sea impermeable y completamente lavable, con excelente
+                durabilidad en el tiempo. La parrilla es de bandejas en v y depósito de grasas en acero inoxidable con
+                sistema de elevación frontal. Además de poder incluir los accesorios de gusto del cliente, como:
+                Campanas, puertas, mesones de hormigón, madera, hornos, lavamanos, parrilla a gas, frigobar, leñero,
+                entre otros.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div id="costavistas" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner bg-white">
+                <div class="carousel-item active">
+                  <img src="../assets/img/servicios/cortavista/cortavista_01.png" alt="Imagen Cortavista Número 1" />
+                </div>
+                <div class="carousel-item">
+                  <img src="../assets/img/servicios/cortavista/cortavista_02.png" alt="Imagen Cortavista Número 2" />
+                </div>
+                <div class="carousel-item">
+                  <img src="../assets/img/servicios/cortavista/cortavista_03.png" alt="Imagen Cortavista Número 3" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex flex-column justify-content-center">
+            <div class="section-title mt-4">
+              <h2>Cortavistas</h2>
+              <p>
+                Los Cortavista de madera son una estructura que permite revestir o subir muros bajos, otorgando una
+                mayor sensación de privacidad a su entorno. Además de dar un toque moderno y acogedor. También permiten
+                separar distintos espacios de su casa como logias o quinchos. Los corta vistas son hechos en Pino
+                Oregón, Pino Insigne.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-3 footer-content" style="background-image: url(assets/img/footer_bg.png)">
+      <div class="container text-white">
+        <div class="row">
+          <div class="footer-column col-xl-4 col-lg-5 col-md-12 col-sm-12 text-white">
+            <div class="footer-widget about-widget">
+              <div class="footer-title">
+                <figure class="image">
+                  <a href="index.html"><img src="assets/img/footer_logo.png" alt="Logo La Buena Madera" />La Buena Madera</a>
+                </figure>
+              </div>
+              <div class="footer-contact">
+                <ul>
+                  <li class="nav-item mb-2"><span class="fa img-map"></span> Santiago, Chile.</li>
+                  <li class="nav-item mb-2">
+                    <span class="fa img-message"></span
+                    ><a href="mailto:contacto@buenamadera.com"> contacto@buenamadera.com</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <span class="fa img-phone"></span><a href="tel:56-8765-4321"> +56-8765-4321</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3 categories">
+            <h5>Categorias</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><span class="fa img-arrow"></span><a href="index.html">Inicio</a></li>
+              <li class="nav-item mb-2">
+                <span class="fa img-arrow"></span><a href="pages/nosotros.html">Nuestra Empresa</a>
+              </li>
+              <li class="nav-item mb-2">
+                <span class="fa img-arrow"></span><a href="pages/soluciones.html">Soluciones</a>
+              </li>
+              <li class="nav-item mb-2">
+                <span class="fa img-arrow"></span><a href="pages/servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item mb-2">
+                <span class="fa img-arrow"></span><a href="pages/proyectos.html">Proyectos</a>
+              </li>
+              <li class="nav-item mb-2">
+                <span class="fa img-arrow"></span><a href="pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Suscríbete</h5>
+              <p>Estar al día. Siga nuestras últimas noticias, consejos de carpintería y ofertas especiales.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Correo electronico</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Correo electronico" />
+                <button class="btn btn-primary btn-theme" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-1">
+          <p>&copy; 2022 La Buena Madera. Todos los derechos reservados.</p>
+          <ul class="list-unstyled d-flex footer-social">
+            <li class="ms-3">
+              <a href="https://www.facebook.com/" target="_blank" class="text-secondary img-facebook"></a>
+            </li>
+            <li class="ms-3">
+              <a href="https://www.linkedin.com/" target="_blank" class="text-secondary img-linkedin"></a>
+            </li>
+            <li class="ms-3">
+              <a href="https://www.instagram.com/" target="_blank" class="text-secondary img-instagram"></a>
+            </li>
+            <li class="ms-3">
+              <a href="https://twitter.com/" target="_blank" class="text-secondary img-twitter"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
