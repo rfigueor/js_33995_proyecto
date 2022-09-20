@@ -16,19 +16,36 @@ const extraXpiso = (porc, numPiso, precio) => {
     return ((precio / 100) * (porc * numPiso)) + precio
 }
 
+// let tipoServicio = 0;
+// let tipoTrabajo = 0;
+
 function fnBuildMessage(item) {
     let msg = "";
+    
     switch (item) {
         case "servicios":
-            for (const item of servicios) {
-                msg = msg + `\n${item.id}. ${item.nombre}`;
+            let ltServicios = localStorage.getItem("ltServicios");
+            let lstServicio = JSON.parse(ltServicios);
+
+            msg = `<option value="0" selected>Seleccione Servicio</option>`
+            let listServicio = document.getElementById("listServicio");
+            for (const item of lstServicio) {
+                msg = msg + `<option value="${item.id}">${item.nombre}</option>`
             }
+            listServicio.innerHTML = msg;
             break;
 
         case "pintura":
-            for (const item of pintura) {
-                msg = msg + `\n${item.id}. ${item.nombre} ${item.nota}`;
+            let ltPintura = localStorage.getItem("ltPintura");
+            let lstPintura = JSON.parse(ltPintura);
+
+            msg = `<option value="0" selected>Seleccione Superficie a Pintar</option>`
+            let listPintura = document.getElementById("listPintura");
+            for (const item of lstPintura) {
+
+                msg = msg + `<option value="${item.id}">${item.nombre} ${item.nota}</option>`
             }
+            listPintura.innerHTML = msg;
             break;
 
         default:
@@ -40,80 +57,104 @@ function fnBuildMessage(item) {
 
 
 
-function fnPintura() {
+function fnCalcular() {
     let mt2 = 0;              // Inicializa variable
     let totalMonto = 0;       // Inicializa variable
-    let precio = 2000;      // Valor de mano de obra por metro cuadrado
+    let precio = 0;      // Valor de mano de obra por metro cuadrado
+    let tipoServicio = Number(localStorage.getItem("lsServicioSelect"));
 
-    let msg = fnBuildMessage("pintura");
+    //SERVICIO DE PINTURA
+    if (tipoServicio === 1) {
+        precio = 2000;
+         
+        let tipoTrabajo = Number(localStorage.getItem("lsTipoTrabajoSelect"));
 
-    let tipoPinturaTrabajo = 0; // Inicializa variable
+        let alertValor = document.getElementById("alertValor");
+        if (tipoTrabajo === 1) {
+            mt2 = Number(document.getElementById("txtMtCasa").value);
+            alertValor.innerHTML = "El valor total del trabajo de pintura de la casa es de : $" + mtXvalor(mt2, precio).toString();
+        } else if (tipoTrabajo === 2) {
+            let porcAdic = 5;
+            let pisos = Number(document.getElementById("txtPisos").value);
+            mt2 = Number(document.getElementById("txtMtEdificio").value);
 
-    //Se ejecuta el ciclo hasta que selecciona una opcion valida
-    do {
-        tipoPinturaTrabajo = parseInt(prompt("¿Que desea pintar?" + msg));
-        if (tipoTrabajo !== 1 && tipoTrabajo !== 2) {
-            alert("Seleccione opcion valida");
+            //Se realiza calculo del piso 1
+            totalMonto = mtXvalor(mt2, precio);
+            for (let x = 1; x < pisos; x++) {
+                totalMonto = totalMonto + mtXvalor(mt2, extraXpiso(porcAdic, x, precio));
+            }
+            alertValor.innerHTML = "El valor total del trabajo de pintura del edificio es de $" + totalMonto.toString();
         }
-    } while (tipoTrabajo !== 1 && tipoTrabajo !== 2)
+    } else if (tipoServicio === 2) {
+        //SERVICIO DE RADIER
+        let mtCubicosXsaco = 0.025;       // Se entienede que un 1 saco rinde para 1 mt cuadrado con una altura de 25 cm 
+        precio = 2500;              // Valor de mano de obra por metro cuadrado
 
+        mt2 = Number(document.getElementById("txtMtRadier").value);
+        let cmAltura = Number(document.getElementById("txtCmRadier").value);
 
-    if (tipoPinturaTrabajo === 1) {
-        mt2 = parseInt(prompt("¿Cantidad de metros cuadrados?"));
-        alert("El valor total del trabajo de pintura de la casa es de : $" + mtXvalor(mt2, precio).toString());
+        let cantSacos = Math.round((mt2 * (cmAltura / 1000)) / mtCubicosXsaco);
+
+        alertValor.innerHTML = "El valor del trabajo es de $" + mtXvalor(mt2, precio).toString() + " y se requieren un total de " + cantSacos.toString() + " sacos de concreto.";
     } else {
-        let porcAdic = 5;
-        let pisos = parseInt(prompt("¿Cantidad de pisos del edificio?"));
-        while (pisos === 1) {
-            pisos = parseInt(prompt("La cantidad de pisos debe ser igual o mayor a 2:"));
-        }
-        mt2 = parseInt(prompt("¿Cantidad de metros cuadrados?"));
-
-        //Se realiza calculo del piso 1
-        totalMonto = mtXvalor(mt2, precio);
-
-        //Para efectos del calculo (multiplicacion), se inicia en 1 pero se llega a la cantidad "anterior" del total de piso [x < pisos]
-        for (let x = 1; x < pisos; x++) {
-            totalMonto = totalMonto + mtXvalor(mt2, extraXpiso(porcAdic, x, precio));
-        }
-
-        alert("El valor total del trabajo de pintura del edificio es de $" + totalMonto.toString());
+        alertValor.innerHTML = "Servicio seleccionado no valido" ;
     }
+
+    alertValor.style.visibility = "visible";
 }
 
 
-function fnRadier() {
-    let mtCubicosXsaco = 0.025;       // Se entienede que un 1 saco rinde para 1 mt cuadrado con una altura de 25 cm 
-    let precio = 2500;              // Valor de mano de obra por metro cuadrado
 
-    let mt2 = parseInt(prompt("¿Cantidad de metros cuadrados?:"));
-    let cmAltura = 0;
+document.getElementById('listServicio').addEventListener('change', function () {
+    
+    let tipoServicio = Number(this.value);
+    localStorage.setItem("lsServicioSelect", tipoServicio);
+    
+    document.getElementById("alertServicio").style.visibility =  (tipoServicio !== 1 && tipoServicio !== 2) ? "visible" : "hidden";
+    document.getElementById("divPintura").style.visibility = (tipoServicio === 1) ? "visible" : "hidden";
+    document.getElementById("divCasa").style.visibility = "hidden";
+    document.getElementById("divEdificio").style.visibility = "hidden";
+    document.getElementById("divRadier").style.visibility = (tipoServicio === 2) ? "visible" : "hidden";
+    document.getElementById("btnCalcular").style.visibility = (tipoServicio === 1 || tipoServicio === 2) ? "visible" : "hidden";
+    document.getElementById("alertValor").style.visibility = "hidden";
+});
 
-    do {
-        cmAltura = parseInt(prompt("¿Altura en cm del radier?:"));
-        if (cmAltura < 15) {
-            alert("La altura minima necesaria es de 15 cm");
-        }
-    } while (cmAltura < 15)
 
-    let cantSacos = Math.round((mt2 * (cmAltura / 1000)) / mtCubicosXsaco);
+document.getElementById('listPintura').addEventListener('change', function () {
 
-    alert("- Se requieren un total de " + cantSacos.toString() + " sacos de concreto.\n- El valor del trabajo es de $" + mtXvalor(mt2, precio).toString());
+    let tipoTrabajo = Number(this.value);
+    localStorage.setItem("lsTipoTrabajoSelect", tipoTrabajo);
 
+    document.getElementById("alertPintura").style.visibility = (tipoTrabajo !== 1 && tipoTrabajo !== 2) ? "visible" : "hidden";
+    document.getElementById("divCasa").style.visibility = (tipoTrabajo === 1) ? "visible" : "hidden";
+    document.getElementById("divEdificio").style.visibility = (tipoTrabajo === 2) ? "visible" : "hidden";
+    document.getElementById("btnCalcular").style.visibility = (tipoTrabajo === 1 || tipoTrabajo === 2) ? "visible" : "hidden";
+    document.getElementById("alertValor").style.visibility = "hidden";
+});
+
+function fnStar() {
+
+    localStorage.setItem("ltServicios", JSON.stringify(servicios));
+    localStorage.setItem("ltPintura", JSON.stringify(pintura));
+
+    document.getElementById("alertServicio").style.visibility = "hidden";
+    document.getElementById("alertPintura").style.visibility = "hidden";
+    document.getElementById("divPintura").style.visibility = "hidden";
+    document.getElementById("divRadier").style.visibility = "hidden";
+    document.getElementById("divCasa").style.visibility = "hidden";
+    document.getElementById("divEdificio").style.visibility = "hidden";
+
+
+    document.getElementById("btnCalcular").style.visibility = "hidden";
+    document.getElementById("alertValor").style.visibility = "hidden";
+
+    let btnCalcularPintura = document.getElementById("btnCalcular");
+    btnCalcularPintura.addEventListener("click", fnCalcular);
+
+    fnBuildMessage("servicios");
+    fnBuildMessage("pintura");
 }
 
-let msg = fnBuildMessage("servicios");
-let tipoTrabajo = 0;
-do {
-    tipoTrabajo = parseInt(prompt("¿Seleccione el tipo de trabajo a realizar?" + msg));
-    if (tipoTrabajo !== 1 && tipoTrabajo !== 2) {
-        alert("Seleccione opcion valida");
-    }
-} while (tipoTrabajo !== 1 && tipoTrabajo !== 2)
+fnStar()
 
-if (tipoTrabajo === 1) {
-    fnPintura();
-}
-else {
-    fnRadier();
-}
+
