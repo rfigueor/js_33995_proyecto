@@ -1,4 +1,6 @@
-# js_33995_proyecto
+# ![Logo](https://labuenamadera.000webhostapp.com/assets/img/readme_logo.png) La Buena Madera
+## _Proyecto Final Curso JavaScript - Comisión 33995_
+
 Repositior donde se subiran los codigos fuentes asociadas al proyecto final del curso JavaScript 33995
 1. Entrega 1;
 

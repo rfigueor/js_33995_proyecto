@@ -25,9 +25,11 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
-    ></script>
+    >
+    
+    </script>
   </head>
-  <body>
+  <body onload="fnOnload('index')">
     <header>
       <div class="px-3 py-2 header-bg text-white">
         <div class="container">
@@ -82,10 +84,11 @@
         <div class="collapse navbar-collapse navbar-menu" id="navbarCollapse">
           <ul class="navbar-nav ms-auto mb-2 mb-md-0">
             <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" id="mnuCotizar" href="javascript:; #my-modal">Cotice su Proyecto</a></li>
             <li class="nav-item"><a class="nav-link" href="pages/nosotros.html">Sobre Nosotros</a></li>
             <li class="nav-item"><a class="nav-link" href="pages/soluciones.html">Soluciones</a></li>
             <li class="nav-item"><a class="nav-link" href="pages/servicios.html">Servicios</a></li>
-            <li class="nav-item"><a class="nav-link" href="pages/proyectos.html">Projectos</a></li>
+            <!-- <li class="nav-item"><a class="nav-link" href="pages/proyectos.html">Projectos</a></li> -->
             <li class="nav-item"><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
           </ul>
         </div>
@@ -95,71 +98,11 @@
     <main>
       <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" style="background-image: url(assets/img/carousel_bg.jpg)">
         <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <!-- <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="container">
-              <div class="carousel-caption">
-                <span class="title">La Buena Madera</span>
-                <h2>
-                  Soluciones de carpinteria <br />
-                  profesional.
-                </h2>
-                <p>Desarrollo de soluciones de inicio a fin, desde la etapa de diseño hasta la construcción final.</p>
-
-                <p>
-                  <a class="btn btn-lg btn-primary btn-theme" href="pages/soluciones.html"
-                    ><span class="btn-title">Soluciones</span></a
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container">
-              <div class="carousel-caption">
-                <span class="title">La Buena Madera</span>
-                <h2>
-                  Tecnologia y materiales <br />
-                  de primera calidad
-                </h2>
-                <p>Materias primas de gran variedad y de alta calidad.</p>
-
-                <p>
-                  <a class="btn btn-lg btn-primary btn-theme" href="pages/servicios.html"
-                    ><span class="btn-title">Servicios</span></a
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container">
-              <div class="carousel-caption">
-                <span class="title">La Buena Madera</span>
-                <h2>Soluciones a las necesidades de nuestros clientes.</h2>
-                <p>
-                  Contamos con un equipo altamente calificado para brindar un servicio de calidad a lo largo de nuestros proyectos.
-                </p>
-
-                <p>
-                  <a class="btn btn-lg btn-primary btn-theme" href="pages/proyectos.html"
-                    ><span class="btn-title">Proyectos</span></a
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
+        <div class="carousel-inner" id="divCarousel">
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -380,5 +323,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

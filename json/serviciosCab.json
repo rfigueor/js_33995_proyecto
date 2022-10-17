@@ -1,0 +1,16 @@
+[
+    {
+      "codServicio": "01",
+      "servicio": "Servicios de construción de Interiores",
+      "descripcion": "Materias primas de gran variedad y de alta calidad.",
+      "link": "./pages/cotizaInteriores.html",
+      "estado": "active"
+    },
+    {
+      "codServicio": "02",
+      "servicio": "Servicios de construcción de Exteriores",
+      "descripcion": "Desarrollo de soluciones de inicio a fin, desde la etapa de diseño hasta la construcción final.",
+      "link": "./pages/cotizaExteriores.html",
+      "estado": ""
+    }
+]
