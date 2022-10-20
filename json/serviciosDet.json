@@ -1,65 +1,65 @@
 [
-    {
-      "codServicio": "01",
-      "codDetaServicio": "011",
-      "servicio": "Construccón de Terraza",
-      "descripcion": "Descripcion de terraza",
-      "linkImage": "terraza_01.jpg"
-    },
-    {
-      "codServicio": "01",
-      "codDetaServicio": "012",
-      "servicio": "Construccón de Quincho",
-      "descripcion": "Descripcion de Quinchos",
-      "linkImage": "terraza_01.jpg"
-    },
-    {
-      "codServicio": "01",
-      "codDetaServicio": "013",
-      "servicio": "Construccón de Cobertizos",
-      "descripcion": "Descripcion de Cobertizos",
-      "linkImage": "terraza_01.jpg"
-    },
-    {
-      "codServicio": "01",
-      "codDetaServicio": "014",
-      "servicio": "Construccón de Cortavistas",
-      "descripcion": "Descripcion de Cortavistas",
-      "linkImage": "terraza_01.jpg"
-    },
-    {
-      "codServicio": "01",
-      "codDetaServicio": "015",
-      "servicio": "Construccón de Pergolas",
-      "descripcion": "Descripcion de Pergolas",
-      "linkImage": "terraza_01.jpg"
-    },
-    {
-      "codServicio": "02",
-      "codDetaServicio": "021",
-      "servicio": "Escalera",
-      "descripcion": "Descripcion de Escalera",
-      "linkImage": "terraza_01.jpg"
-    },
-    {
-      "codServicio": "02",
-      "codDetaServicio": "022",
-      "servicio": "Revestimientos",
-      "descripcion": "Descripcion de Escalera",
-      "linkImage": "terraza_01.jpg"
-    },
-    {
-      "codServicio": "02",
-      "codDetaServicio": "023",
-      "servicio": "Muebles empotrados a medida",
-      "descripcion": "Descripcion de Muebles",
-      "linkImage": "terraza_01.jpg"
-    },
-    {
-      "codServicio": "02",
-      "codDetaServicio": "024",
-      "servicio": "Pisos de Madera",
-      "descripcion": "Descripcion de Pisos",
-      "linkImage": "terraza_01.jpg"
-    },
+  {
+    "codServicio": "01",
+    "codDetaServicio": "011",
+    "servicio": "Escalera",
+    "descripcion": "Descripcion de Escalera",
+    "linkImage": "terraza_01.jpg"
+  },
+  {
+    "codServicio": "01",
+    "codDetaServicio": "012",
+    "servicio": "Revestimientos",
+    "descripcion": "Descripcion de Revestimientos",
+    "linkImage": "terraza_01.jpg"
+  },
+  {
+    "codServicio": "01",
+    "codDetaServicio": "013",
+    "servicio": "Muebles empotrados a medida",
+    "descripcion": "Descripcion de Muebles",
+    "linkImage": "terraza_01.jpg"
+  },
+  {
+    "codServicio": "01",
+    "codDetaServicio": "014",
+    "servicio": "Pisos de Madera",
+    "descripcion": "Descripcion de Pisos",
+    "linkImage": "terraza_01.jpg"
+  },
+  {
+    "codServicio": "02",
+    "codDetaServicio": "021",
+    "servicio": "Construccón de Terraza",
+    "descripcion": "Descripcion de terraza",
+    "linkImage": "terraza_01.jpg"
+  },
+  {
+    "codServicio": "02",
+    "codDetaServicio": "022",
+    "servicio": "Construccón de Quincho",
+    "descripcion": "Descripcion de Quinchos",
+    "linkImage": "terraza_01.jpg"
+  },
+  {
+    "codServicio": "02",
+    "codDetaServicio": "023",
+    "servicio": "Construccón de Cobertizos",
+    "descripcion": "Descripcion de Cobertizos",
+    "linkImage": "terraza_01.jpg"
+  },
+  {
+    "codServicio": "02",
+    "codDetaServicio": "024",
+    "servicio": "Construccón de Cortavistas",
+    "descripcion": "Descripcion de Cortavistas",
+    "linkImage": "terraza_01.jpg"
+  },
+  {
+    "codServicio": "02",
+    "codDetaServicio": "025",
+    "servicio": "Construccón de Pergolas",
+    "descripcion": "Descripcion de Pergolas",
+    "linkImage": "terraza_01.jpg"
+  }
 ]

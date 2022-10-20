@@ -101,6 +101,18 @@ li {
   font-family: "PT Serif", serif;
   margin-bottom: 10px;
 }
+
+.page-title h4 {
+  position: relative;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1.2em;
+  z-index: 99;
+  color: #ffffff;
+  font-family: "PT Serif", serif;
+  margin-bottom: 10px;
+}
+
 .page-title .title {
   position: relative;
   display: inline-block;
