@@ -1,0 +1,137 @@
+[
+  {
+    "codProducto": 11,
+    "codTipoProducto": 111,
+    "tipoProducto": "Caracol",
+    "descripcion": "Descripción Escalera de Caracol",
+    "valorBase": 98980,
+    "hhDesde": 133,
+    "hhHasta": 308
+  },
+  {
+    "codProducto": 11,
+    "codTipoProducto": 112,
+    "tipoProducto": "Recta",
+    "descripcion": "Descripción Escalera de Recta",
+    "valorBase": 26850,
+    "hhDesde": 102,
+    "hhHasta": 287
+  },
+  {
+    "codProducto": 11,
+    "codTipoProducto": 113,
+    "tipoProducto": "Mixta",
+    "descripcion": "Descripción Escalera de Mixta",
+    "valorBase": 23456,
+    "hhDesde": 146,
+    "hhHasta": 298
+  },
+  {
+    "codProducto": 12,
+    "codTipoProducto": 121,
+    "tipoProducto": "Paneles",
+    "descripcion": "Descripción Revisimiento en Paneles",
+    "valorBase": 470583,
+    "hhDesde": 143,
+    "hhHasta": 270
+  },
+  {
+    "codProducto": 12,
+    "codTipoProducto": 122,
+    "tipoProducto": "Tablones",
+    "descripcion": "Descripción Revisimiento en Tablones",
+    "valorBase": 852011,
+    "hhDesde": 108,
+    "hhHasta": 297
+  },
+  {
+    "codProducto": 12,
+    "codTipoProducto": 123,
+    "tipoProducto": "Laminado",
+    "descripcion": "Descripción Revisimiento en Laminado",
+    "valorBase": 97365,
+    "hhDesde": 114,
+    "hhHasta": 280
+  },
+  {
+    "codProducto": 13,
+    "codTipoProducto": 131,
+    "tipoProducto": "Cocina (Suelo)",
+    "descripcion": "Descripción Mieble de Cocina (Suelo)",
+    "valorBase": 725463,
+    "hhDesde": 163,
+    "hhHasta": 326
+  },
+  {
+    "codProducto": 13,
+    "codTipoProducto": 132,
+    "tipoProducto": "Cocina (Pared)",
+    "descripcion": "Descripción Mieble de Cocina (Pared)",
+    "valorBase": 890384,
+    "hhDesde": 184,
+    "hhHasta": 371
+  },
+  {
+    "codProducto": 13,
+    "codTipoProducto": 133,
+    "tipoProducto": "Closet - Puerta Corredera",
+    "descripcion": "Descripción Closet - Puerta Corredera",
+    "valorBase": 239736,
+    "hhDesde": 191,
+    "hhHasta": 359
+  },
+  {
+    "codProducto": 13,
+    "codTipoProducto": 134,
+    "tipoProducto": "Closet - Puerta Normal",
+    "descripcion": "Descripción Closet - Puerta Normal",
+    "valorBase": 941035,
+    "hhDesde": 101,
+    "hhHasta": 250
+  },
+  {
+    "codProducto": 13,
+    "codTipoProducto": 135,
+    "tipoProducto": "Biblioteca",
+    "descripcion": "Descripción Biblioteca",
+    "valorBase": 395530,
+    "hhDesde": 190,
+    "hhHasta": 293
+  },
+  {
+    "codProducto": 13,
+    "codTipoProducto": 136,
+    "tipoProducto": "Rack de TV",
+    "descripcion": "Descripción Rack de TV",
+    "valorBase": 792230,
+    "hhDesde": 128,
+    "hhHasta": 320
+  },
+  {
+    "codProducto": 14,
+    "codTipoProducto": 141,
+    "tipoProducto": "Parque",
+    "descripcion": "Descripción piso tipo Parquet",
+    "valorBase": 469731,
+    "hhDesde": 143,
+    "hhHasta": 252
+  },
+  {
+    "codProducto": 14,
+    "codTipoProducto": 142,
+    "tipoProducto": "Piso Largo",
+    "descripcion": "Descripción piso piso Largo",
+    "valorBase": 717757,
+    "hhDesde": 186,
+    "hhHasta": 370
+  },
+  {
+    "codProducto": 14,
+    "codTipoProducto": 143,
+    "tipoProducto": "Con incrustaciones",
+    "descripcion": "Descripción piso con incrustaciones",
+    "valorBase": 938720,
+    "hhDesde": 147,
+    "hhHasta": 292
+  }
+]

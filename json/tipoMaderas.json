@@ -1,0 +1,38 @@
+[
+  {
+    "codTipoMadera": 1,
+    "tipoMadera": "Pino Oregon"
+  },
+  {
+    "codTipoMadera": 2,
+    "tipoMadera": "Pino Insigne"
+  },
+  {
+    "codTipoMadera": 3,
+    "tipoMadera": "Pino Finger"
+  },
+  {
+    "codTipoMadera": 4,
+    "tipoMadera": "Alerce"
+  },
+  {
+    "codTipoMadera": 5,
+    "tipoMadera": "Raulí"
+  },
+  {
+    "codTipoMadera": 6,
+    "tipoMadera": "Coigüe"
+  },
+  {
+    "codTipoMadera": 7,
+    "tipoMadera": "Lenga"
+  },
+  {
+    "codTipoMadera": 8,
+    "tipoMadera": "Eucaliptus"
+  },
+  {
+    "codTipoMadera": 9,
+    "tipoMadera": "Roble"
+  }
+ ]

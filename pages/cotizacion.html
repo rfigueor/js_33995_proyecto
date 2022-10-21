@@ -98,10 +98,15 @@
       </div>
     </section>
 
-    <section class="section">
-      <div class="accordion" id="accordionServicios">
-      </div>
-    </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="accordion" id="accordionServicios"></div>
+        </div>
+      </section>
+
+     
+
     
     <footer class="py-3 footer-content" style="background-image: url(../assets/img/footer_bg.png)">
       <div class="container text-white">
@@ -173,8 +178,34 @@
           </ul>
         </div>
       </div>
+
     </footer>
+    <div class="modal fade" id="instructions" tabindex="-1" aria-labelledby="instructionsLabel" aria-hidden="hidden">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="instructionsLabel">
+              Cotización
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            </button>
+          </div>
+          <div class="modal-body">
+            Double Right click anywhere on the screen to bring up a menu
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="../js/cotizacion.js"></script>
   </body>
 </html>
