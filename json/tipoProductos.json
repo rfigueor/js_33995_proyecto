@@ -5,6 +5,7 @@
     "tipoProducto": "Caracol",
     "descripcion": "Descripción Escalera de Caracol",
     "valorBase": 98980,
+    "valorMt": 98980,
     "hhDesde": 133,
     "hhHasta": 308
   },
@@ -14,6 +15,7 @@
     "tipoProducto": "Recta",
     "descripcion": "Descripción Escalera de Recta",
     "valorBase": 26850,
+    "valorMt": 98980,
     "hhDesde": 102,
     "hhHasta": 287
   },
@@ -23,6 +25,7 @@
     "tipoProducto": "Mixta",
     "descripcion": "Descripción Escalera de Mixta",
     "valorBase": 23456,
+    "valorMt": 98980,
     "hhDesde": 146,
     "hhHasta": 298
   },
@@ -32,6 +35,7 @@
     "tipoProducto": "Paneles",
     "descripcion": "Descripción Revisimiento en Paneles",
     "valorBase": 470583,
+    "valorMt": 98980,
     "hhDesde": 143,
     "hhHasta": 270
   },
@@ -41,6 +45,7 @@
     "tipoProducto": "Tablones",
     "descripcion": "Descripción Revisimiento en Tablones",
     "valorBase": 852011,
+    "valorMt": 98980,
     "hhDesde": 108,
     "hhHasta": 297
   },
@@ -50,6 +55,7 @@
     "tipoProducto": "Laminado",
     "descripcion": "Descripción Revisimiento en Laminado",
     "valorBase": 97365,
+    "valorMt": 98980,
     "hhDesde": 114,
     "hhHasta": 280
   },
@@ -59,6 +65,7 @@
     "tipoProducto": "Cocina (Suelo)",
     "descripcion": "Descripción Mieble de Cocina (Suelo)",
     "valorBase": 725463,
+    "valorMt": 98980,
     "hhDesde": 163,
     "hhHasta": 326
   },
@@ -68,6 +75,7 @@
     "tipoProducto": "Cocina (Pared)",
     "descripcion": "Descripción Mieble de Cocina (Pared)",
     "valorBase": 890384,
+    "valorMt": 98980,
     "hhDesde": 184,
     "hhHasta": 371
   },
@@ -77,6 +85,7 @@
     "tipoProducto": "Closet - Puerta Corredera",
     "descripcion": "Descripción Closet - Puerta Corredera",
     "valorBase": 239736,
+    "valorMt": 98980,
     "hhDesde": 191,
     "hhHasta": 359
   },
@@ -86,6 +95,7 @@
     "tipoProducto": "Closet - Puerta Normal",
     "descripcion": "Descripción Closet - Puerta Normal",
     "valorBase": 941035,
+    "valorMt": 98980,
     "hhDesde": 101,
     "hhHasta": 250
   },
@@ -95,6 +105,7 @@
     "tipoProducto": "Biblioteca",
     "descripcion": "Descripción Biblioteca",
     "valorBase": 395530,
+    "valorMt": 98980,
     "hhDesde": 190,
     "hhHasta": 293
   },
@@ -104,6 +115,7 @@
     "tipoProducto": "Rack de TV",
     "descripcion": "Descripción Rack de TV",
     "valorBase": 792230,
+    "valorMt": 98980,
     "hhDesde": 128,
     "hhHasta": 320
   },
@@ -113,6 +125,7 @@
     "tipoProducto": "Parque",
     "descripcion": "Descripción piso tipo Parquet",
     "valorBase": 469731,
+    "valorMt": 98980,
     "hhDesde": 143,
     "hhHasta": 252
   },
@@ -122,6 +135,7 @@
     "tipoProducto": "Piso Largo",
     "descripcion": "Descripción piso piso Largo",
     "valorBase": 717757,
+    "valorMt": 98980,
     "hhDesde": 186,
     "hhHasta": 370
   },
@@ -131,7 +145,358 @@
     "tipoProducto": "Con incrustaciones",
     "descripcion": "Descripción piso con incrustaciones",
     "valorBase": 938720,
+    "valorMt": 98980,
     "hhDesde": 147,
     "hhHasta": 292
+  },
+  {
+    "codProducto": 21,
+    "codTipoProducto": 211,
+    "tipoProducto": "Rustica",
+    "descripcion": 1,
+    "valorBase": 942935,
+    "valorMt": 255172,
+    "hhDesde": 113,
+    "hhHasta": 51
+  },
+  {
+    "codProducto": 21,
+    "codTipoProducto": 212,
+    "tipoProducto": "Minimalista",
+    "descripcion": 2,
+    "valorBase": 778069,
+    "valorMt": 968761,
+    "hhDesde": 50,
+    "hhHasta": 104
+  },
+  {
+    "codProducto": 21,
+    "codTipoProducto": 213,
+    "tipoProducto": "Chill Out",
+    "descripcion": 3,
+    "valorBase": 519314,
+    "valorMt": 618433,
+    "hhDesde": 117,
+    "hhHasta": 107
+  },
+  {
+    "codProducto": 21,
+    "codTipoProducto": 214,
+    "tipoProducto": "Moderna",
+    "descripcion": 4,
+    "valorBase": 487351,
+    "valorMt": 486411,
+    "hhDesde": 67,
+    "hhHasta": 96
+  },
+  {
+    "codProducto": 21,
+    "codTipoProducto": 215,
+    "tipoProducto": "Europea",
+    "descripcion": 5,
+    "valorBase": 490414,
+    "valorMt": 314519,
+    "hhDesde": 94,
+    "hhHasta": 104
+  },
+  {
+    "codProducto": 21,
+    "codTipoProducto": 216,
+    "tipoProducto": "Asiatica",
+    "descripcion": 6,
+    "valorBase": 292450,
+    "valorMt": 697692,
+    "hhDesde": 84,
+    "hhHasta": 112
+  },
+  {
+    "codProducto": 21,
+    "codTipoProducto": 217,
+    "tipoProducto": "Patagonica",
+    "descripcion": 7,
+    "valorBase": 841861,
+    "valorMt": 585864,
+    "hhDesde": 118,
+    "hhHasta": 94
+  },
+  {
+    "codProducto": 22,
+    "codTipoProducto": 221,
+    "tipoProducto": "Rustica",
+    "descripcion": 1,
+    "valorBase": 335343,
+    "valorMt": 805507,
+    "hhDesde": 99,
+    "hhHasta": 72
+  },
+  {
+    "codProducto": 22,
+    "codTipoProducto": 222,
+    "tipoProducto": "Minimalista",
+    "descripcion": 2,
+    "valorBase": 683300,
+    "valorMt": 917101,
+    "hhDesde": 77,
+    "hhHasta": 67
+  },
+  {
+    "codProducto": 22,
+    "codTipoProducto": 223,
+    "tipoProducto": "Chill Out",
+    "descripcion": 3,
+    "valorBase": 104892,
+    "valorMt": 690568,
+    "hhDesde": 77,
+    "hhHasta": 60
+  },
+  {
+    "codProducto": 22,
+    "codTipoProducto": 224,
+    "tipoProducto": "Moderna",
+    "descripcion": 4,
+    "valorBase": 326283,
+    "valorMt": 805802,
+    "hhDesde": 105,
+    "hhHasta": 101
+  },
+  {
+    "codProducto": 22,
+    "codTipoProducto": 225,
+    "tipoProducto": "Europea",
+    "descripcion": 5,
+    "valorBase": 156630,
+    "valorMt": 240092,
+    "hhDesde": 120,
+    "hhHasta": 147
+  },
+  {
+    "codProducto": 22,
+    "codTipoProducto": 226,
+    "tipoProducto": "Asiatica",
+    "descripcion": 6,
+    "valorBase": 671436,
+    "valorMt": 230191,
+    "hhDesde": 89,
+    "hhHasta": 81
+  },
+  {
+    "codProducto": 22,
+    "codTipoProducto": 227,
+    "tipoProducto": "Patagonica",
+    "descripcion": 7,
+    "valorBase": 916571,
+    "valorMt": 438865,
+    "hhDesde": 129,
+    "hhHasta": 134
+  },
+  {
+    "codProducto": 23,
+    "codTipoProducto": 231,
+    "tipoProducto": "Rustica",
+    "descripcion": 1,
+    "valorBase": 483464,
+    "valorMt": 406338,
+    "hhDesde": 138,
+    "hhHasta": 117
+  },
+  {
+    "codProducto": 23,
+    "codTipoProducto": 232,
+    "tipoProducto": "Minimalista",
+    "descripcion": 2,
+    "valorBase": 629189,
+    "valorMt": 626425,
+    "hhDesde": 121,
+    "hhHasta": 140
+  },
+  {
+    "codProducto": 23,
+    "codTipoProducto": 233,
+    "tipoProducto": "Chill Out",
+    "descripcion": 3,
+    "valorBase": 235126,
+    "valorMt": 580973,
+    "hhDesde": 135,
+    "hhHasta": 55
+  },
+  {
+    "codProducto": 23,
+    "codTipoProducto": 234,
+    "tipoProducto": "Moderna",
+    "descripcion": 4,
+    "valorBase": 450261,
+    "valorMt": 451291,
+    "hhDesde": 68,
+    "hhHasta": 80
+  },
+  {
+    "codProducto": 23,
+    "codTipoProducto": 235,
+    "tipoProducto": "Europea",
+    "descripcion": 5,
+    "valorBase": 547316,
+    "valorMt": 53426,
+    "hhDesde": 132,
+    "hhHasta": 138
+  },
+  {
+    "codProducto": 23,
+    "codTipoProducto": 236,
+    "tipoProducto": "Asiatica",
+    "descripcion": 6,
+    "valorBase": 249330,
+    "valorMt": 338303,
+    "hhDesde": 134,
+    "hhHasta": 115
+  },
+  {
+    "codProducto": 23,
+    "codTipoProducto": 237,
+    "tipoProducto": "Patagonica",
+    "descripcion": 7,
+    "valorBase": 818098,
+    "valorMt": 393946,
+    "hhDesde": 133,
+    "hhHasta": 108
+  },
+  {
+    "codProducto": 24,
+    "codTipoProducto": 241,
+    "tipoProducto": "Rustica",
+    "descripcion": 1,
+    "valorBase": 402281,
+    "valorMt": 268168,
+    "hhDesde": 106,
+    "hhHasta": 129
+  },
+  {
+    "codProducto": 24,
+    "codTipoProducto": 242,
+    "tipoProducto": "Minimalista",
+    "descripcion": 2,
+    "valorBase": 865690,
+    "valorMt": 612267,
+    "hhDesde": 143,
+    "hhHasta": 113
+  },
+  {
+    "codProducto": 24,
+    "codTipoProducto": 243,
+    "tipoProducto": "Chill Out",
+    "descripcion": 3,
+    "valorBase": 145601,
+    "valorMt": 83324,
+    "hhDesde": 128,
+    "hhHasta": 60
+  },
+  {
+    "codProducto": 24,
+    "codTipoProducto": 244,
+    "tipoProducto": "Moderna",
+    "descripcion": 4,
+    "valorBase": 425803,
+    "valorMt": 979434,
+    "hhDesde": 67,
+    "hhHasta": 111
+  },
+  {
+    "codProducto": 24,
+    "codTipoProducto": 245,
+    "tipoProducto": "Europea",
+    "descripcion": 5,
+    "valorBase": 375134,
+    "valorMt": 845635,
+    "hhDesde": 86,
+    "hhHasta": 66
+  },
+  {
+    "codProducto": 24,
+    "codTipoProducto": 246,
+    "tipoProducto": "Asiatica",
+    "descripcion": 6,
+    "valorBase": 772596,
+    "valorMt": 152529,
+    "hhDesde": 76,
+    "hhHasta": 88
+  },
+  {
+    "codProducto": 24,
+    "codTipoProducto": 247,
+    "tipoProducto": "Patagonica",
+    "descripcion": 7,
+    "valorBase": 222259,
+    "valorMt": 522377,
+    "hhDesde": 119,
+    "hhHasta": 144
+  },
+  {
+    "codProducto": 25,
+    "codTipoProducto": 251,
+    "tipoProducto": "Rustica",
+    "descripcion": 1,
+    "valorBase": 353403,
+    "valorMt": 775517,
+    "hhDesde": 56,
+    "hhHasta": 66
+  },
+  {
+    "codProducto": 25,
+    "codTipoProducto": 252,
+    "tipoProducto": "Minimalista",
+    "descripcion": 2,
+    "valorBase": 845380,
+    "valorMt": 778807,
+    "hhDesde": 147,
+    "hhHasta": 146
+  },
+  {
+    "codProducto": 25,
+    "codTipoProducto": 253,
+    "tipoProducto": "Chill Out",
+    "descripcion": 3,
+    "valorBase": 543387,
+    "valorMt": 628448,
+    "hhDesde": 72,
+    "hhHasta": 99
+  },
+  {
+    "codProducto": 25,
+    "codTipoProducto": 254,
+    "tipoProducto": "Moderna",
+    "descripcion": 4,
+    "valorBase": 204474,
+    "valorMt": 495893,
+    "hhDesde": 135,
+    "hhHasta": 101
+  },
+  {
+    "codProducto": 25,
+    "codTipoProducto": 255,
+    "tipoProducto": "Europea",
+    "descripcion": 5,
+    "valorBase": 699785,
+    "valorMt": 169084,
+    "hhDesde": 65,
+    "hhHasta": 91
+  },
+  {
+    "codProducto": 25,
+    "codTipoProducto": 256,
+    "tipoProducto": "Asiatica",
+    "descripcion": 6,
+    "valorBase": 494376,
+    "valorMt": 67763,
+    "hhDesde": 73,
+    "hhHasta": 150
+  },
+  {
+    "codProducto": 25,
+    "codTipoProducto": 257,
+    "tipoProducto": "Patagonica",
+    "descripcion": 7,
+    "valorBase": 422816,
+    "valorMt": 361151,
+    "hhDesde": 100,
+    "hhHasta": 61
   }
 ]

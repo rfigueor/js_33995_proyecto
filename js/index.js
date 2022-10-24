@@ -1,6 +1,6 @@
 const fnCargaCarousel = async () => {
   // const respuesta = await fetch("https://my-json-server.typicode.com/rfigueor/js_33995_db/tree/main/servicios");
-  const respuesta = await fetch("../json/serviciosCab.json");
+  const respuesta = await fetch("../json/servicios.json");
   const data = await respuesta.json();
 
   msg = "";
@@ -22,28 +22,6 @@ const fnCargaCarousel = async () => {
   document.getElementById("divCarousel").innerHTML = msg;
 };
 
-mnuCotizar.addEventListener("click", () => {
-  Swal.fire({
-    title: "¿Que tipo de servicio desea cotizar?",
-    input: "select",
-    inputOptions: {
-      "001": "Servicios de construción de Interiores",
-      "002": "Servicios de construcción de Exteriores",
-    },
-    inputPlaceholder: "(Seleccione...)",
-    showCancelButton: true,
-    inputValidator: function (value) {
-      return new Promise(function (resolve, reject) {
-        window.location.assign("./pages/cotizacion.html?codser=" + value);
-      });
-    },
-  }).then(function (result) {
-    swal({
-      type: "success",
-      html: "You selected: " + result,
-    });
-  });
-});
 
 function fnOnload(page) {
     fnCargaCarousel();

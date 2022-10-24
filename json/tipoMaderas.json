@@ -1,38 +1,47 @@
 [
   {
     "codTipoMadera": 1,
-    "tipoMadera": "Pino Oregon"
+    "tipoMadera": "Pino Oregon",
+    "valorMt2": 98980
   },
   {
     "codTipoMadera": 2,
-    "tipoMadera": "Pino Insigne"
+    "tipoMadera": "Pino Insigne",
+    "valorMt2": 98980
   },
   {
     "codTipoMadera": 3,
-    "tipoMadera": "Pino Finger"
+    "tipoMadera": "Pino Finger",
+    "valorMt2": 98980
   },
   {
     "codTipoMadera": 4,
-    "tipoMadera": "Alerce"
+    "tipoMadera": "Alerce",
+    "valorMt2": 98980
   },
   {
     "codTipoMadera": 5,
-    "tipoMadera": "Raulí"
+    "tipoMadera": "Raulí",
+    "valorMt2": 98980
   },
   {
     "codTipoMadera": 6,
-    "tipoMadera": "Coigüe"
+    "tipoMadera": "Coigüe",
+    "valorMt2": 98980
   },
   {
     "codTipoMadera": 7,
-    "tipoMadera": "Lenga"
+    "tipoMadera": "Lenga",
+    "valorMt2": 98980
   },
   {
     "codTipoMadera": 8,
-    "tipoMadera": "Eucaliptus"
+    "tipoMadera": "Eucaliptus",
+    "valorMt2": 98980
   },
   {
     "codTipoMadera": 9,
-    "tipoMadera": "Roble"
+    "tipoMadera": "Roble",
+    "valorMt2": 98980
   }
  ]

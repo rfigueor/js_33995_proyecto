@@ -98,6 +98,17 @@
       </div>
     </section>
 
+    <section class="section">
+      <div class="container">
+        Servicios // Productos Cotizados: <label id="lblCantCotizaciones">0</label>
+        <button type="button" class="btn btn-primary" id="btnVerCarrito">
+          Ver Carrito
+        </button>
+        <button type="button" class="btn btn-primary" id="btnLimpiarCarrito">
+          Limpiar Carrito
+        </button>
+      </div>
+    </section>
 
       <section class="section">
         <div class="container">
@@ -180,32 +191,109 @@
       </div>
 
     </footer>
-    <div class="modal fade" id="instructions" tabindex="-1" aria-labelledby="instructionsLabel" aria-hidden="hidden">
-      <div class="modal-dialog">
+    <div class="modal fade" id="formInteriores" tabindex="-1" aria-labelledby="lblInteriores" aria-hidden="hidden">
+      <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="instructionsLabel">
-              Cotización
+            <h5 class="modal-title" id="lblInteriores">
+              Cotización de <label id="lblTituloProducto"></label>
             </h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
             </button>
           </div>
           <div class="modal-body">
-            Double Right click anywhere on the screen to bring up a menu
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label id="lblTipoProducto" for="inputTipoProducto" class="form-label">Tipo de Producto</label>
+                <select id="inputTipoProducto" class="form-select">
+                  <!-- <option selected>Seleccione...</option> -->
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="inputTipoMadera" class="form-label">Madera a utilizar</label>
+                <select id="inputTipoMadera" class="form-select">
+                  <!-- <option selected>Seleccione...</option> -->
+                </select>
+              </div>
+              <div class="col-md-2">
+                <label for="inputAlto" class="form-label">Altura (cm)</label>
+                <input type="number" class="form-control" id="inputAlto">
+              </div>
+              <div class="col-md-2">
+                <label for="inputAncho" class="form-label">Ancho (cm)</label>
+                <input type="number" class="form-control" id="inputAncho">
+              </div>
+            </form>
+            <div class="alert alert-success" id="alertValor" role="alert">
+              Valor del Trabajo: <label id="lblValor"></label>
+            </div>
           </div>
           <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="btnCalcularCotizacion">
+              Calcular
+            </button>
+            <button type="button" class="btn btn-primary" id="btnAddCotizacion" data-bs-dismiss="modal">
+              Agregar a Cotización
+            </button>
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-              Close
+              Cerrar
             </button>
           </div>
         </div>
       </div>
     </div>
 
-    
+
+    <div class="modal fade" id="formCarro" tabindex="-1" aria-labelledby="lblCarroModal" aria-hidden="hidden">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="lblCarroModal">
+              Listado de Cotizaciones
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            </button>
+          </div>
+          <div class="modal-body" id="tblCotizaciones">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Producto</th>
+                  <th scope="col">Tipo de Producto</th>
+                  <th scope="col">Tipo de Madera</th>
+                  <th scope="col">Detalle Medidas</th>
+                  <th scope="col">Valor Madera Base</th>
+                  <th scope="col">Valor Trabajo Base</th>
+                  <th scope="col">Valor Trabajo Mt2</th>
+                </tr>
+              </thead>
+              <tbody id="tblListCotizaciones">
+              </tbody>
+            </table>
+            <div class="alert alert-success" id="alertValorTotal" role="alert">
+              Valor Total: <label id="lblValorTotal"></label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="btnPrintCotizacion">
+              Imprimir
+            </button>
+            <button type="button" class="btn btn-primary" id="btnSendMail" data-bs-dismiss="modal">
+              Enviar Correo
+            </button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/currencyformatter.js/2.2.0/currencyFormatter.min.js" integrity="sha512-zaNuym1dVrK6sRojJ/9JJlrMIB+8f9IdXGzsBQltqTElXpBHZOKI39OP+bjr8WnrHXZKbJFdOKLpd5RnPd4fdg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="../js/cotizacion.js"></script>
   </body>
 </html>
